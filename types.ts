@@ -1,3 +1,20 @@
+export type Attendees = Pick<Resident, "id" | "firstName" | "lastName">[];
+
+export type ResidentMap = {
+  [residentId: string]: Pick<Resident, "firstName" | "lastName">;
+};
+
+export interface ProgramWithAttendees {
+  id: number;
+  name: string;
+  location: string;
+  attendees: Attendees;
+  start: string;
+  facilitators: string[];
+  levelOfCare: string[];
+  tags: string[];
+}
+
 type LevelOfCare = "INDEPENDENT" | "ASSISTED" | "MEMORY" | "LONGTERM";
 
 export interface Attendance {
@@ -6,14 +23,13 @@ export interface Attendance {
   status: "Active" | "Passive" | "Declined" | "Undefined";
 }
 
-
 export interface Resident {
   id: number;
   name: string;
   firstName: string;
   lastName: string;
-  preferredName:null|string;
-  status:null|string;
+  preferredName: null | string;
+  status: null | string;
   room: string;
   levelOfCare: LevelOfCare;
   ambulation: "NOLIMITATIONS" | "CANE" | "WALKER" | "WHEELCHAIR";
@@ -26,10 +42,10 @@ export interface Resident {
 }
 
 interface Recurrence {
-    byMonth:number;
-    interval:number;
-    frequency:string;
-    byMonthday:number;
+  byMonth: number;
+  interval: number;
+  frequency: string;
+  byMonthday: number;
 }
 
 export interface Program {
