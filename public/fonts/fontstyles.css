@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Metropolis Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./Metropolis-Thin.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Metropolis Bold";
+  font-style: normal;
+  font-weight: 800;
+  src: url("./Metropolis-Black.woff") format("woff");
+  font-display: swap;
+}

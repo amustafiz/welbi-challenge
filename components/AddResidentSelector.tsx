@@ -23,7 +23,7 @@ const AddResidentSelector = ({ programId }: { programId: number }) => {
   };
 
   return (
-    <div className="flex flex-col items-center space-y-2">
+    <div className="flex flex-col items-center space-y-2 font-metropolisBold md:font-metropolis">
       <p className="mb-2 font-bold">Add Resident</p>
       <select
         className="outline w-[80%] outline-[1px] rounded outline-[#61c0c2]"

@@ -22,7 +22,7 @@ const Layout: FunctionComponent<any> = ({ children }) => {
       <div className="overflow-y-auto">
         <div className="w-full h-screen max-w-screen-xl px-0 mx-auto ">
           <div className="py-2 md:flex-col md:px-5 md:relative">
-            <main className="mt-[10px] font-montserrat">{children}</main>
+            <main className="mt-[10px] font-metropolis">{children}</main>
           </div>
         </div>
       </div>
